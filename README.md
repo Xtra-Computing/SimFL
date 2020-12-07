@@ -1,4 +1,4 @@
-This is the code of paper [Practical Federated Gradient Boosting Decision Trees](https://arxiv.org/pdf/1911.04206.pdf). The implementation is based on [ThunderGBM](https://github.com/Xtra-Computing/thundergbm.git)
+This is the code of paper [Practical Federated Gradient Boosting Decision Trees](https://arxiv.org/pdf/1911.04206.pdf). The implementation is based on a previous version of [ThunderGBM](https://github.com/Xtra-Computing/thundergbm.git).
 
 # Installation
 
