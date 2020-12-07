@@ -1,8 +1,13 @@
 This is the code of paper [Practical Federated Gradient Boosting Decision Trees](https://arxiv.org/pdf/1911.04206.pdf). The implementation is based on a previous version of [ThunderGBM](https://github.com/Xtra-Computing/thundergbm.git).
 
+
 # Installation
 
-Build SimFL:
+## Prerequisites
+* CMake
+* CUDA
+
+## Build
 ```
 git submodule init
 git submodule update
@@ -16,10 +21,6 @@ make -j
 # Usage
 
 SimFL currently only works for binary classification tasks with labels 0 and 1 and requires GPUs.
-
-## Prerequisites
-* CMake
-* CUDA
 
 ## Parameteres
 
