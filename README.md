@@ -41,6 +41,6 @@ Please rename all the local datasets in such format: name+'_train'+party_id, e.g
 Under `build` directory
 
 ```
-./src/test/thundergbm-test -p 2 -t 30 -b 500 -r 4 -s -1 -f ../dataset/a9a/ -d 123 -n 50 -e 8
+./src/test/thundergbm-test -p 2 -t 30 -b 500 -r 4 -s -1 -f ../dataset/a9a/a9a -d 123 -n 50 -e 8
 ```
 
