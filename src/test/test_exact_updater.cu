@@ -2539,6 +2539,8 @@ class PerformanceTest : public UpdaterTest {
 };
 
 void parse_command_line(){
+    int require_d=0;
+    int require_f=0;
     for (int i = 1; i < iargc; i++){
         if (iargv[i][0] != '-')
             break;
@@ -2558,12 +2560,14 @@ void parse_command_line(){
                 r = atof(iargv[i]);
                 break;
             case 'f':
+                require_f=1;
                 dataset_path = iargv[i];
                 break;
             case 's':
                 lsh_seed = atoi(iargv[i]);
                 break;
             case 'd':
+                require_d=1;
                 max_dim = atoi(iargv[i]);
                 break;
             case 'n':
@@ -2573,6 +2577,13 @@ void parse_command_line(){
                 n_depth = atoi(iargv[i]);
                 break;
         }
+    }
+    if(!require_d){
+        std::cout<<"The maximum dimension (-d) is not specified!"<<std::endl;
+        exit(1);
+    }
+    if(!require_f){
+        std::cout<<"The dataset path (-f) is not specified!"<<std::endl;
     }
 }
 
