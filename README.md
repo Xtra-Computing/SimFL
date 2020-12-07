@@ -1,4 +1,4 @@
-This is the code of paper [Practical Federated Gradient Boosting Decision Trees](https://arxiv.org/pdf/1911.04206.pdf).
+This is the code of paper [Practical Federated Gradient Boosting Decision Trees](https://arxiv.org/pdf/1911.04206.pdf). The implementation is based on [ThunderGBM](https://github.com/Xtra-Computing/thundergbm.git)
 
 # Installation
 
@@ -15,7 +15,11 @@ make -j
 
 # Usage
 
-SimFL currently only works for binary classification tasks with labels 0 and 1.
+SimFL currently only works for binary classification tasks with labels 0 and 1 and requires GPUs.
+
+## Prerequisites
+* CMake
+* CUDA
 
 ## Parameteres
 
